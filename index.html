@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bahşiş Hesaplayıcı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="logo"><img src="images/logo.svg" alt="" /></div>
+    <div class="tip-calculator">
+      <div class="partOne">
+        <label for="">Fatura</label>
+        <input type="number" class="input bill-input" id="bill-input">
+        <label for="">Bahşiş Oranı Seçiniz</label>
+        <div class="tip">
+          <div class="tips tip-5">5%</div>
+          <div class="tips tip-10">10%</div>
+          <div class="tips active-tip tip-15">15%</div>
+          <div class="tips tip-25">25%</div>
+          <div class="tips tip-50">50%</div>
+          <div  id="tip-custom"><input class="tip-custom" type="number" placeholder="% GİR"></div>
+        </div>
+        <div class="peopleLabel">
+          <label for="">Faturayı Ödeyecek Kişi Sayısı</label>
+          <label for="" class="error">Yüzdelik 0 olamaz!</label>
+        </div>
+        <input type="number" class="input people-input">
+      </div>
+      
+
+      <div class="result">
+        <div class="tip-amount">
+          <div class="text">
+            <p>Bahşiş Tutarı</p>
+            <p class="person">/ kişi başı</p>
+          </div>
+          <div class="amount" id="tip-amount">5₺</div>
+        </div>
+        <div class="total">
+          <div class="text">
+            <p>Ödenecek Tutar</p>
+            <p class="person">/ kişi başı</p>
+          </div>
+          <div class="amount" id="total-amount">30₺</div>
+        </div>
+        <div class="reset">SIFIRLA</div>
+      </div>
+    <div>
+
+    <script src="/script/script.js"></script>
+  </body>
+</html>
